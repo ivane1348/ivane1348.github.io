@@ -6,115 +6,29 @@ Version 12/19/2013
 -->
 
 <html>
-<head>
-	<style = "text/css">
-		#img1popout {
-			z-index: 5;
-			position: absolute;
-			width: 550px;
-			height: 300px;
-			top: 50px;
-			border: 1px dashed #000099;
-			background-color: #ddddff;
-		}
-		#img1popin{}
-		
-	</style>
-	<script type = "text/javascript">
-		function initPopout()
-		{
-			var thumb1 = document.getElementById("image1"); 
-			
-			thumb1.onmouseover = showDetailedView;
-		}
+<h1>Top DBZ Characters</h1>
+<p>Goku
+<a href="http://wallpapercave.com/goku-kamehameha-wallpaper"><img src="http://vignette2.wikia.nocookie.net/wikizilla-role-play/images/0/08/Goku.jpg/revision/latest?cb=20170311185237"></a>
+Vegeta
+<a href="http://dragonvegito.deviantart.com/art/Vegeta-s-Big-Bang-Attack-380500093">
+<img src=http://static.tvtropes.org/pmwiki/pub/images/vegetavwx2014_928.jpg></a>
+Gohan
+<a href="http://princegohan227.deviantart.com/art/Gohan-masenko-render-628128805">
+<img src=https://s-media-cache-ak0.pinimg.com/236x/bc/8a/7e/bc8a7ecd98369095336496318d0cd0dc.jpg?noindex=1>
+  </a>
+<style>
+	body {
+    background-color: orange;
+}
 
-		function showDetailedView()
-		{
-			var im1 = document.getElementById("img1popin");
-			im1.id = "img1popout";
-			im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
-			var popOut = document.getElementById("img1popout");
-			popOut.onmouseout = hideDetailedView;			
-		}
+h1 {
+    color: black;
+    text-align: center;
+}
 
-		function hideDetailedView()
-		{
-			var im1 = document.getElementById("img1popout");
-			im1.id = "img1popin";
-			im1.innerHTML = "";
-		}
-	</script>
-</head>
-<body onload="initPopout();">
-<br>
-<table>
-	<caption>Your Results:</caption>
-	<tbody>
-	<tr>
-		<td>
-			<img id="image1" src="aprilla/pic1thumb.jpg"><div id = "img1popin"></div>
-		</td>
-		<td>
-			<img id="image2" src="aprilla/pic2thumb.jpg"><div id = "img2popin"></div>
-		</td>
-		<td>
-			<img id="image3" src="aprilla/pic3thumb.jpg"><div id = "img3popin"></div>
-		</td>
-		<td>
-			<img src="aprilla/pic4thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic5thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic6thumb.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<img src="aprilla/pic7thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic8thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic9thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic10thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic11thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic12thumb.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<img src="aprilla/pic13thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic14thumb.jpg">
-		</td>
-		<td>
-			<img src="aprilla/pic15thumb.jpg">
-		</td>
-	</tr>
-	</tbody>
-</table>
-<br>
-Search the art database using the fields below.
-<form method="post" action="index1.html">
-	<pre>
-First Name
-<input type="text" name="firstname">
-<br>
-Last Name
-<input type="text" name="lastname">
-<br>
-<input type="submit" value="SEARCH">
-	</pre>
-</form>
-</body>
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
 </html>
